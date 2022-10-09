@@ -1,0 +1,46 @@
+h1, p { 
+    /* Блочные боксы */
+    background-color: #f1eeee;
+  }
+  
+  em, strong { 
+    /* Строчные боксы */
+    background-color: #29fd2f;
+    display: inline;
+  }
+
+   h1 {
+    padding: 50px; 
+    /* поля */ 
+    }
+
+    p { /*Рассмотрение полей отдельно*/
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 50px;
+      }
+    
+      /* p { другая форма записи - верх  - низ  - право - лево
+        padding: 20px 10px;
+      } */
+
+      h1 {
+        padding: 50px;
+        border: 1px solid #0b24fb; /*ширина, тип, цвет*/
+      }
+
+        /* У полей (padding) бокса есть фон, а отступы (margin) всегда прозрачны;
+        Поля (padding) входят в зону клика элемента, а отступы (margin) нет;
+        Отступы (margin) схлопываются вертикально, а поля (padding) нет */
+
+    strong {
+        margin: 50px;
+        padding: 50px;
+    }
+
+/* Content (Контент) отвечает за текст, изображения или любые другие медиа
+Padding (Поля) – за расстояние между контентом бокса и его границей
+Border (Граница) – за линию между отступом и полем бокса
+Margin (Отступы) – за расстояние между боксами */

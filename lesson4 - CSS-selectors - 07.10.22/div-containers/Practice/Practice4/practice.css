@@ -1,0 +1,21 @@
+.summary {
+  width: 450px;
+  height: 450px;
+
+  background-color: rgb(66, 225, 22);
+}
+
+/* .summary:hover {
+  width: 650px;
+  height: 650px;
+
+  background-color: rgb(225, 22, 208);
+} */
+
+
+#summary-block {
+  width: 450px;
+  height: 450px;
+
+  background-color: gray;
+}

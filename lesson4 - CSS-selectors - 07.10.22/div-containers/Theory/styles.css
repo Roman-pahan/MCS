@@ -1,0 +1,117 @@
+
+
+.synopsis{
+    color: #7E8184;
+    font-style: normal;
+}
+
+.button:link,
+
+.button:visited{
+    display: block;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #29fd2f;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0b24fb;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;
+}
+
+.call-to-action:link,
+ /* доп класс меняет вид*/
+ .call-to-action:visited {
+    font-style: italic;
+    background-color: #EEB75A;
+  }
+  
+  .call-to-action:hover,
+  .call-to-action:visited:hover {
+    background-color: #F5CF8E;
+  }
+  
+  .call-to-action:active,
+  .call-to-action:visited:active {
+    background-color: #EEB75A;
+  }
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+
+  a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: purple;
+  }
+  
+  a:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+  }
+
+  a:visited:hover {
+    color: orange;
+  }
+
+  a:visited:active {
+    color: red;
+  }
+
+  p:last-of-type {
+    margin-bottom: 50px;
+  }
+
+  p:first-of-type {
+    color: #483509;
+    font-style: italic;
+  }
+
+  .page > p:first-of-type {
+    color: #1eae36;
+    font-style: italic;
+  }
+
+  #button-3 { /* Высокая специфичность*/
+    color: #5D6063;
+    background-color: #D55C5F;
+  }
+
+/* Весовая категория по убыванию
+
+#button-2
+
+.button:link
+
+a:link и .synopsis em (они равны)
+
+.button
+
+a */
+

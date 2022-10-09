@@ -1,0 +1,38 @@
+.font{
+    font-weight: bold;
+}
+
+
+p{
+    
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+h1{
+    color: white;
+    background-color: black;
+    margin-top: 100px;
+}
+
+a:link {
+    color: aqua;
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color:  aqua;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: red;
+    text-decoration: underline;
+  }
+
+

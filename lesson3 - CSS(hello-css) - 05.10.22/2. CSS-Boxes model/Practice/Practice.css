@@ -1,0 +1,16 @@
+h1{
+    padding: 30px;
+    display: inline;
+    border: 5px solid #66e8db;
+    background-color: #ece38d;
+    margin-bottom: 10px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    text-align: left;
+    background-color: blue;
+    margin-top:  30px;;
+    
+}

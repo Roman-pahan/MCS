@@ -1,0 +1,31 @@
+.synopsis{
+    color: #7E8184;
+    font-style: italic;
+}
+
+.button{
+    color: #fff;
+    background-color: #29fd2f;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0b24fb;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.summary{
+    color: #7E8184;
+    width: 200px;
+}
+
+.call-to-action{
+    font-weight: bold;
+    color: rgb(188, 101, 101);
+}
+
+.text{
+    padding: 20px;
+}
