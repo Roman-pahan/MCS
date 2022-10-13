@@ -1,0 +1,33 @@
+/* body {
+    background-image: url(theother.png),url(that.gif), url(this.jpg);
+} */
+
+/* body{
+    background: url(bg.png), url(bullet.png) 0 50% no-repeat, url(arrow.png) right no-repeat;
+    background-size: auto;
+} */
+
+.wrapper{
+    min-height: 500px;
+    width: 500px;
+    background: center linear-gradient(to bottom right, orange, red);  
+    /* Переход из нижнего правого угла из оранжевого в красный   */
+    /* background: linear-gradient(45deg, orange, red); */
+    /* Другой способ с помощью настрйоки угла */
+    /* background: linear-gradient(hsl(0,100%,50%),hsl(60,100%,50%),hsl(120,100%,50%),hsl(180,100%,50%),hsl(240,100%,50%),hsl(300,100%,50%)); */
+    
+}
+
+body {
+    background: #666 url(fade.png) 0 0 repeat-y;
+    background: -webkit-linear-gradient(right, #000, #666); 
+    background: linear-gradient(to right, #000, #666);
+}
+
+/* #burrito {
+    width: 400px;
+    height: 200px;
+    border: 10px solid rgba(0,255,0,.5);
+    padding: 20px;
+    background: url(chilli.png) 0 0 no-repeat;
+} */

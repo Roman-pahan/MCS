@@ -1,0 +1,28 @@
+/* body {
+    background-image: url(theother.png),url(that.gif), url(this.jpg);
+} */
+
+/* body{
+    background: url(bg.png), url(bullet.png) 0 50% no-repeat, url(arrow.png) right no-repeat;
+    background-size: auto;
+} */
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-color: gainsboro;
+    
+    background-image: url(theother.png), url(this.jpg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+/* #burrito {
+    width: 400px;
+    height: 200px;
+    border: 10px solid rgba(0,255,0,.5);
+    padding: 20px;
+    background: url(chilli.png) 0 0 no-repeat;
+} */
