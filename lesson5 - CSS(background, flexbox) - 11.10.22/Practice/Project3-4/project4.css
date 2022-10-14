@@ -27,23 +27,23 @@
 }
 
 .container {
-  width: 2100px;
+  /* width: 2100px; */
   display: flex;
   justify-content: center; 
-  flex-wrap: wrap;
-  flex-direction: row;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
   padding-top: 1%;
   padding-bottom: 1%;
   /* align-items: center; */
   /* По вертикали */
-  border: 1px solid orangered;
+  /* border: 1px solid orangered; */
 }
 
 .boxes{
     display: block;
-    width: 300px;
-    height: 700px;
-    margin-left: 7%;
+    width: 400px;
+    /* height: 750px; */
+    margin: 14px 25px;
     border: 2px solid rgb(151, 91, 12);
     border-radius: 0.5rem;
     font-size: 1.25rem;

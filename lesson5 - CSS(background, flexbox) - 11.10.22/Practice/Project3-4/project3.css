@@ -7,9 +7,8 @@
   body{
     background-image: url(Background.jpeg);
     background-size: cover;
-    width: 1518px;
-    height: 2600px;
     background-position: right;
+    color: #fff;
   }
   
   
@@ -33,15 +32,16 @@
     /* border: 1px solid #fff; */
   }
   .image-location{ 
-    width: 1350px;
+    background-image: url(Hairs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
     height: 300px;
     display: flex;
+
     justify-content: left; 
     /* в случае когда горизонтальное расположение */
     flex-wrap: wrap;
-    margin: 0%;
-    padding: 0%;
-    flex-direction: column;
     /* Располагает строку в противоположном виде */
     align-items: left;
     /* в случае вертикального расположения */
@@ -67,7 +67,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     line-height: 1.5;
-    color: black;
+    color: #fff;
     background:linear-gradient(to right, rgb(61, 33, 1) 33%, rgb(70, 71, 35) 66%);
     text-align: center;
   }
@@ -87,22 +87,22 @@
     border-radius: 0.5rem;
   }
   a:link {
-    color:  black;
+    color: #fff;
     text-decoration: underline;
   }
   
   a:visited {
-    color:  black;
+    color: #fff;
     text-decoration: underline;
   }
   
   a:hover {
-    color:   black;
+    color: #fff;
     text-decoration: underline;
   }
   
   a:active {
-    color:  black;
+    color: #fff;
     text-decoration: underline;
   }
 
