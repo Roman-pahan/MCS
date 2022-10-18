@@ -127,140 +127,72 @@ a:hover {
   .minilist {      /*ничего не отображаем*/               
     display: none; /* Добавляем новое правило */
   }
+
   
+
+  .main-section{
+    padding: 150px 0;
+    background: linear-gradient(rgb(4, 4, 54)1%, rgb(122, 130, 205) 14%, rgb(30, 27, 74) 35%, rgb(30, 27, 74) 65%, rgb(122, 130, 205) 99%);
+  }
+
+  .main-content{
+    width: 1040px;
+    margin: 0 auto;
+  }
+
   .parentline{
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(122, 130, 205) 33%, rgb(30, 27, 74) 66%)
+    padding: 30px;
+
+    font-style: normal;
+    font-size: medium;
+
+    border-radius: 25px;
+    border: 2px solid rgb(90, 130, 199);
   }
 
   .textbox{
-    font-style: normal;
-    font-size: medium;
     display: flex;
-    width: 800px;
-    border-radius: 25px;
-    border: 2px solid rgb(90, 130, 199);
-    text-align: center;
-    margin: 20px 0 20px 0;
+    gap:30px;
+  }
+
+  .textstr{
+
   }
 
   .parentimage{
     display: flex;
     justify-content: center;
-    background:rgb(30, 27, 74);
-    width: auto;
-    height: 880px;
-  
-
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 25px;
+    overflow: hidden;
   }
 
-  .imagebox1{
-    display: flex;
-    background-image: url(1.jpg);
-    width: 380px;
-    height: 797px;
-    margin: 0px 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    
-
+  .miniimage{
+    width: 100%;
+    display: block;
   }
 
-  .imagebox2{
-    display: flex;
-    background-image: url(2.jpg);
-    width: 380px;
-    height: 797px;   
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 0px 30px;
 
-  }
-  .imagebox3{
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    background-image: url(3.jpg);
-    width: 380px;
-    height: 797px;
-    margin: 0px 30px;
-
-  }
-
-  .imagebox4{
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    background-image: url(4.jpg);
-    width: 380px;
-    height: 797px;
-    margin: 0px 30px;
-
-  }
-
-  /* .minitextbox{
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(30, 27, 74) 33%, rgb(122, 130, 205) 66%);
-    width: auto;
-    height: 0px;
-    
-  } */
 
   .minitx{
-    display: flex;
-    margin: 0px auto;
-    font-weight: bolder;
     font-family: "Monotype Corsiva";
     font-size: xx-large;
-    margin: 0px 30px;
-    position: relative;
-    top: 710px;
-    left: 65px; 
-  }
-
-
-  .lower-layer{
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(30, 27, 74) 33%, rgb(122, 130, 205) 66%);
-    width: auto;
-    flex-direction: row;
-    padding-top: 50px;
-  }
-
-  .frame{
-    font-style: normal;
-    font-size: medium;
-    display: flex;
-    width: 1100px;
-    border-radius: 25px;
-    border: 2px solid rgb(90, 130, 199);
-    text-align: right center;
-    align-items: left center;
-    justify-content: center;
-    margin: 3%;
+    text-align: center;
+    font-weight: bolder;
+    
   }
 
   .low-lvl-img{
-    background-size: contain;
-    background-repeat: no-repeat;
     display: block;
-    background-image: url(low-level.jpg);
-    width: 900px;
-    margin: 10px;
+    width: 50%;
+    object-fit: cover;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
   }
 
-  .low-lvl-txt{
-    font-style: normal;
-    font-size: medium;
-    display: block;
-    width: 800px;
-    margin: 10px;
-  }
 
   .footer {
     display: flex;
