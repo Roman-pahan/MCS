@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 550;
+    /* line-height: 1.75; */
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 30px; 
+    display: flex;
+    justify-content: space-between;
+    background: blue;
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.module{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 3px solid black;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+  }
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+  .footer-one{
+    text-align: left;
+    margin-left: 25px;
+  }
+
+  .footer-two{
+    text-align: right;
+    margin-right: 25px;
+  }
+
+
+  /* Макет для мобильных */
+  @media only screen and (max-width: 390px) {
+
+}
+
+/* Макет для планшетов */
+@media only screen and (min-width: 390px) {
+    .page{
+        width: 580px;
+    }
+    
+    .center{
+        display: flex;
+        justify-content:center
+    }
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        background: blue;
+    
+      }
+    
+      .footer-item {
+        height: 100px;
+        flex: 1;
+        padding-top: 3%;
+      }
+    
+}
