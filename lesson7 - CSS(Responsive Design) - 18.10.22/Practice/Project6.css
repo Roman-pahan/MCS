@@ -26,7 +26,8 @@
     align-items: center;
     text-align: center;
     border: 3px solid black;
-    width: 175px;
+    /* width: 175px; */
+    max-width: 45%;
     height: 175px;
     margin: 10px;
   }
@@ -55,27 +56,33 @@ a:hover {
   /* Макет для мобильных */
   @media only screen and (max-width: 390px) {
 
+
+
 }
 
 /* Макет для планшетов */
-@media only screen and (min-width: 390px) {
-    .page{
+@media only screen and (min-width: 390px) and (max-width: 800px)  {
+    /* .page{
         width: 580px;
-    }
+    } */
+
     
     .center{
         display: flex;
         justify-content:center
     }
-    
 
-    
-    
-    
+    @media only screen and (min-width: 800px){
+      .module{
+        max-width: 100%;
+      }
 
-    
-    
-    
+      .center{
+        display: flex;
+        justify-content:center
+    }
+    }
+     
     
     .footer {
         display: flex;
