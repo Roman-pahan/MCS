@@ -26,7 +26,7 @@
     align-items: center;
     text-align: center;
     border: 3px solid black;
-    /* width: 175px; */
+    width: 175px;
     max-width: 45%;
     height: 175px;
     margin: 10px;
@@ -41,7 +41,18 @@ a:visited {
 a:hover {
   text-decoration: underline;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: blue;
 
+}
+
+.footer-item {
+  height: 100px;
+  flex: 1;
+  padding-top: 3%;
+}
   .footer-one{
     text-align: left;
     margin-left: 25px;
@@ -61,10 +72,10 @@ a:hover {
 }
 
 /* Макет для планшетов */
-@media only screen and (min-width: 390px) and (max-width: 800px)  {
-    /* .page{
+@media only screen and (min-width: 391px) /*and (max-width: 800px)*/  {
+    .page{
         width: 580px;
-    } */
+    }
 
     
     .center{
@@ -72,7 +83,7 @@ a:hover {
         justify-content:center
     }
 
-    @media only screen and (min-width: 800px){
+    /* @media only screen and (min-width: 800px){
       .module{
         max-width: 100%;
       }
@@ -82,19 +93,8 @@ a:hover {
         justify-content:center
     }
     }
-     
+      */
     
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        background: blue;
-    
-      }
-    
-      .footer-item {
-        height: 100px;
-        flex: 1;
-        padding-top: 3%;
-      }
+
     
 }
