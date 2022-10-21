@@ -19,6 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .module{
@@ -26,10 +27,10 @@
     align-items: center;
     text-align: center;
     border: 3px solid black;
-    width: 175px;
-    max-width: 45%;
-    height: 175px;
-    margin: 10px;
+    /* width: 175px; */
+    /* max-width: 45%; */
+    height: 300px;
+    margin: 20px;
   }
 
 a:link,
@@ -63,37 +64,61 @@ a:hover {
     margin-right: 25px;
   }
 
+  .center{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 
   /* Макет для мобильных */
   @media only screen and (max-width: 390px) {
 
+    .page{
+      padding: 20px 22px 21px 22px;
+    }
+    .module{
+      width: 100%;
+      height: 165px;
+      margin-top: 41px;
+      font-size: 1em;
+    }
 
+    .box:first-of-type{
+      margin-top: 0;
+    }
 
 }
 
 /* Макет для планшетов */
 @media only screen and (min-width: 391px) /*and (max-width: 800px)*/  {
-    .page{
+    /* .page{
         width: 580px;
-    }
+        border: 2px solid pink;
+    } */
 
+    .module{
+      width: 39%;
+      font-size: 1.2em;
+    }
     
-    .center{
+    /* .center{
         display: flex;
-        justify-content:center
-    }
+        justify-content:center;
+        border: 2px solid pink;
+    } */
 
-    /* @media only screen and (min-width: 800px){
+    @media only screen and (min-width: 800px){
       .module{
-        max-width: 100%;
+        max-width: 40%;
+        font-size: 2em;
       }
 
-      .center{
+      /* .center{
         display: flex;
         justify-content:center
+    } */
     }
-    }
-      */
+     
     
 
     
