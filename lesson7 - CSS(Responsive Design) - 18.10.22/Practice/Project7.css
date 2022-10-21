@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-weight: 550;
     /* line-height: 1.75; */
-    font-size: 1.25rem;
-    font-weight: bold;
+    /* font-size: 1em; */
+    font-size: 12px;
     font-family: sans-serif;
+    
 }
+
 
 .header {
     padding: 30px; 
@@ -28,24 +30,28 @@ a:hover {
 .footer {
     display: flex;
     justify-content: space-between;
-    background: blue;
-    text-align: center;
+    background: blue;   
 
 }
 
 .footer-item {
-    height: 100px;
+    height: 80px;
     flex: 1;
+    
     
 }
 .footer-one {
-    text-align: left;
+    /* text-align: center; */
     margin-left: 25px;
+    align-items: center;
+    padding: 30px;
+    /* vertical-align: middle; */
 }
 
 .footer-two{
     text-align: right;
     margin-right: 25px;
+    padding: 30px;
   }
 
 .flexbox{
@@ -62,9 +68,9 @@ a:hover {
     display: flex;
     justify-content: center; 
     padding: 20px 20px 20px 20px;
-    /* margin: 20px 20px 20px 20px; */
-    border: 8px solid pink;
-    margin: 80px;
+    margin: 20px;
+    width: 100%;
+
 }
 
 .column{
@@ -72,21 +78,100 @@ a:hover {
     flex-direction: column;
     border: 2px solid black;
     background-size: auto;
-    margin-left: 140px;
-}
-
-.photo{
-    width: 100%;
-    display: flex;
+    width: 33%;
+    margin: 0px;
     text-align: center;
-    border: 2px solid rgb(14, 6, 225);
-    background-size: cover;
 }
 
-.text{
+.photo img{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+/* .text{
     display: flex;
     flex-direction: column;
     height: 600px;
     text-align: center;
-    border: 2px solid red;
+} */
+
+/* Макет для мобильных */
+@media only screen and (max-width: 390px) {
+
+    .text{
+        font-size: 0.5em;
+    }
+
+    .texth3{
+        font-size: 15px;
+    }
+
+    .middlebox{
+        margin: 0;
+    }
+
+    .column{
+        margin: 0;
+    }
+
+    .middlebox{
+        padding: 0 0 0 0;
+        margin: 0;
+        width: 100%;
+    
+    }
+
+
 }
+
+/* Макет для планшетов */
+@media only screen and (min-width: 390px)  and (max-width: 800px)  {
+    .text{
+        font-size: 1.2em;
+    }
+    .texth3{
+        font-size: 18px;
+    }
+
+
+    .column{
+        margin: 20px auto;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .middlebox{
+        padding: 0px 0px 0px 0px;
+        margin: 0px;     
+    }
+
+}
+
+
+    @media only screen and (min-width: 801px){
+        .text{
+            font-size: 2em;
+
+        }
+
+        .texth3{
+            font-size: 30px;
+        }
+        .middlebox{
+            padding: 20px 20px 20px 20px;
+            margin: 20px;     
+        }
+        
+        .column{
+            margin: 20px;
+        }
+
+    }
+
+
+
+     
+    
+
+    
