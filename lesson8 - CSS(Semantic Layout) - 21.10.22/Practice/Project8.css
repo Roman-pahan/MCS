@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 550;
+}
+
+body {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #000000;
+    
+}
+
+  .main{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to right, rgb(255, 253, 240), rgb(77, 153, 202));
+  }
+
+  .maincontent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+    padding: 30px;
+  
+    display: flex;
+    justify-content: space-between;
+      
+    background:linear-gradient(to right, rgb(255, 253, 240), rgb(77, 153, 202));
+}
+
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.toolbar{
+    margin-top: 15px;
+}
+
+
+.toolbar > li {
+    margin-right: 50px;
+    display: inline;
+}
+
+.toolbar > li:last-of-type { /*обращение к последнему в списке*/
+    margin-right: 0;
+}
+
+.activeminilist:hover .minilist { /*обращение к.features-menu в случае .dropdown:hover (наведение курсора)*/
+    display: flex;
+    background-color: rgba(255, 217, 0, 0.667);
+    flex-direction: column;
+    border-radius: 7px;
+    padding-top: 50px;
+    text-align: right;
+    z-index: 2;
+
+    position: absolute;      /* Добавим это */
+    top: -25px;              /* Добавим это */
+    left: -150px;             /* Добавим это */
+  }
+
+  .minilist li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    margin: 10px;
+    width: 200px;
+  }
+
+  /*обращение к последнему в списке*/
+  .minilist li:last-of-type { 
+    border-bottom: none; 
+  }
+
+  .activeminilist {
+    position: relative;
+  }
+
+  .activeminilist > span { 
+    z-index: 3;
+    position: relative;  /* Это очень важно! */
+    cursor: pointer;
+  }
+
+  .minilist {      /*ничего не отображаем*/               
+    display: none; /* Добавляем новое правило */
+  }
+
+
+  .flexboxtop { 
+    display: flex;
+    list-style-type: none;
+    margin: 15px;
+  }
+
+ul.flexboxtop li{
+    display: inline-block;
+    justify-content: start;
+    margin-right: 25px;
+
+}
+
+.flexboxtophigh{
+    margin-left: -20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to right, rgb(255, 253, 240), rgb(77, 153, 202));
+      
+
+}
+
+.footer-item {
+    height: 80px;
+    flex: 1;
+    
+    
+    
+}
+.footer-one {
+    /* text-align: center; */
+    margin-left: -5px;
+    align-items: center;
+    padding: 30px;
+    /* vertical-align: middle; */
+}
+
+.footer-two{
+    text-align: right;
+    margin-right: -5px;
+    padding: 30px;
+  }
+
+.flexbox{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.photo img{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+.frame{
+    display: block;
+    border-radius: 7px;
+    padding: 40px;
+    background-color: rgba(255, 217, 0, 0.667);
+    color: #FFFFFF;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+
+
+    
+}
+
+.centercenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+
+
+    position: absolute;
+    top: 200px;
+}
+
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  
+    color: #FFFFFF;
+    background-color:rgba(255, 217, 0, 0.667);
+  
+    border: none;
+    border-radius: 7px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color:orange;
+  }
+  
+  .form-row button:active {
+    background-color: rgb(255, 106, 0);
+  }
+
+  .form-row input{
+    border: none;
+    border-bottom:1px solid black;
+    background-color:rgba(255, 217, 0, 0.153);
+  }
+
+  .form-row input:focus{
+    background-color:rgba(255, 217, 0, 0.153);
+  }
