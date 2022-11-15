@@ -1,0 +1,172 @@
+//Null
+$no_value:null; //false value
+
+
+
+
+//логические значения
+$var1: true;
+$var2:false;
+
+
+
+// Словарь
+@use 'sass:map';
+@use 'sass:list';
+
+$border_pairs: ("width":1px, "color": black, "type": solid);
+footer{
+    border: map.get($border_pairs, "width") map.get($border_pairs, "type") map.get($border_pairs, "color");
+}
+
+//Списки
+$numbers:(12px, 40px, 50%, 1rem);
+$border: 1px solid black;
+section{
+    min-width: list.nth($numbers, 3);
+    border: $border;
+}
+header{
+    h1, h2{
+        color: black;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        span{
+            color:gray;
+        }
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+    > {
+            time{
+            color: #ccc;
+        }
+
+        span{
+            font-size: 0.8rem;
+        }
+
+    }
+
+}
+
+.blog-post{
+    padding: 2em 0;
+
+    :not(&) {
+        margin-top: 1em;
+    }
+    & &__header{
+        padding: 1em 0;
+
+        &--colapsed{
+            padding: 0;
+        }
+    }
+}
+
+a{
+    &:link{
+
+    }
+
+    &:hover{
+        
+    }
+
+    &:active{
+        
+    }
+
+    &:focus{
+        
+    }
+
+    &:visited{
+        
+    }
+}
+
+$border_width: '2px'; //global variable
+
+article{
+    $color: black; //local variable
+    border: $border_width solid $color;
+}
+
+// section{
+//     border: $border_width solid #ccc
+// }
+
+//Числа
+$width: 200.34px;
+
+article{
+    min-width: $width;
+}
+
+//Строки с кавычками
+
+$font_family:'Helvetica Neue';
+$file_name:'background.png';
+article{
+    font-family: $font_family;
+    background-image: url("/images/#{$file_name}");
+}
+
+//Строки без кавычек
+$type:solid;
+$prefix: -ms;
+
+article{
+    border:1px $type black;
+    #{$prefix}-flex: 1;
+}
+
+//Цвета
+$bg: #dedede;
+body{
+    background-color: $bg;
+}
+
+@debug 1px == 1px; //true
+@debug 1 == 1px; //false
+@debug 1px != 1px; //false
+@debug "bold" != bold; //true
+@debug (1px solid) != (1px,solid); //true
+@debug (1px solid) == (1px,solid); //true
+@debug 1 > 2; //false
+@debug 1 <= 2; //true
+
+// +
+// -
+// *
+// /
+// %
+@debug 1px + 2px;//3px
+@debug 12/4;//3
+
+$width:100px;
+$gap: 50px;
+$time:1s;
+
+article{
+    min-width: $width+ $gap + 100px;
+    font-family: "Helvetica " + "Neue";
+}
+
+//not
+//not true ---> false
+
+//and
+//true and false ---> false
+
+//or
+//true or false ---> true
+
+
+

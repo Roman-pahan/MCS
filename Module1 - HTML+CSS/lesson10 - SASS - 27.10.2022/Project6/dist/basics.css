@@ -1,0 +1,23 @@
+.element-20px {
+  min-width: 20px;
+}
+
+.element-50px {
+  min-width: 50px;
+}
+
+.element-100px {
+  min-width: 100px;
+}
+
+.element-150px {
+  min-width: 150px;
+}
+
+.message-info {
+  background-color: blue;
+}
+
+.message-alert {
+  background-color: red;
+}

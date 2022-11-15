@@ -1,0 +1,160 @@
+@font-face {
+font-family: "HarryPotterRegular";
+src: url('HarryPotterRegular.woff') format('woff');
+}
+
+body {
+    font-family: "HarryPotterRegular", sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
+    color: rgb(236, 150, 13);
+    }
+
+    em, strong {
+font-synthesis: none;
+}
+
+.old-style {
+font-family: "Sorts Mill Goudy", serif;
+}
+
+.transitional {
+font-family: "Libre Baskerville", serif;
+}
+
+.didot {
+font-family: "Rufina", serif;
+}
+
+.slab {
+font-family: "Rokkitt", serif;
+}
+
+.fat-face {
+font-family: 'Alfa Slab One', cursive;
+}
+
+.grotesque {
+font-family: 'Roboto', sans-serif;
+}
+
+.geometric {
+font-family: "Questrial', sans-serif;
+}
+
+.humanist {
+font-family: "Lato", sans-serif;
+}
+
+.display {
+font-family: "Lobster", cursive;
+}
+
+.monospace {
+font-family: "Droid Sans Mono", monospace;
+}
+
+.paragraph-indent p {
+    text-indent: 1em;
+    margin-bottom: 0;
+    }
+.paragraph-indent p:first-of-type {
+text-indent: 0;
+}
+
+/* Дизайнеры нам этого не простят */
+.never-both p {
+    text-indent: 1em;
+    margin-bottom: 1em;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+  }
+
+  figcaption {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 900px) {
+    figure {
+      position: relative;
+    }
+  
+    figcaption {
+      display: block;
+  
+      font-style: italic;
+      text-align: right;
+      background-color: #FFFFFF;
+  
+      position: absolute;
+      left: -60px;
+      bottom: -24px;
+      width: 200px;
+     }
+  }
+
+  .justify {
+    text-align: justify;
+  }
+
+  .messy {
+    line-height: 1.2em;
+  }
+  
+  .messy h2 {
+    line-height: .9em;
+  }
+  
+  .messy:last-of-type {
+    line-height: 1.5em;
+  }
+  
+  .messy:last-of-type h2 {
+    margin-bottom: .3em;
+  }
+  
+  .messy .button:link,
+  .messy .button:visited {
+    margin-top: 0;
+  }
+
+  a:link {
+    transition: all .5s linear 0s;
+    /* all - transition-property
+    	.5s - transition-duration
+    	linear - transition-timing-function
+    	0s - transition-delay
+    */
+
+    font-size: 14px;
+    transition: .5s;
+    transition-property: color, font-size;
+    color: hsl(36,50%,50%);
+    
+}
+
+a:hover {
+    color: hsl(36,100%,50%);
+    font-size: 24px;
+}
+
+.note {
+  width: 300px;
+  height: 300px;
+  background: hsl(36,100%,50%);
+  transform: rotate(-10deg);
+}
+
+  @media only screen and (min-width: 580px) {
+    .not-so-manageable {
+      max-width: 100%;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+  }

@@ -1,0 +1,38 @@
+.custom-input {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  color: #292929;
+  padding: 0.5rem;
+  border: 1px solid #292929;
+  box-shadow: 0 2px 3px #292929;
+  text-transform: uppercase;
+}
+
+.custom-label {
+  width: 100%;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #292929;
+  color: #fff;
+  padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 3px #292929;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #7a7676;
+}
+.btn:active {
+  border-color: #292929;
+  box-shadow: 0 4px 5px #7a7676;
+}

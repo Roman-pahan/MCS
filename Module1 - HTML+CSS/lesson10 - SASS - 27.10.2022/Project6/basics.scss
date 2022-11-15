@@ -1,0 +1,15 @@
+$widths: 20px 50px 100px 150px;
+
+@each $width in $widths{
+    .element-#{$width}{
+        min-width: $width;
+    }
+}
+
+$messages: ("info": blue, "alert": red); //ключ, значение
+
+@each $type, $color in $messages{
+    .message-#{$type}{
+        background-color: $color;
+    }
+}

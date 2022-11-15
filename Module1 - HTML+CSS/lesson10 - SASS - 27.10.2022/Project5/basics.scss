@@ -1,0 +1,12 @@
+@mixin children(){
+    @for $i from 1 through 10{
+        &:nth-child(2n + #{$i}){
+            background-color: grey;
+        }
+    }
+}
+
+ul{
+    @include children();
+}
+

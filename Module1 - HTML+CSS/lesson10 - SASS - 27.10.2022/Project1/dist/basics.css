@@ -1,0 +1,67 @@
+footer {
+  border: 1px solid black;
+}
+
+section {
+  min-width: 50%;
+  border: 1px solid black;
+}
+
+header h1, header h2 {
+  color: black;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+header h1 span {
+  color: gray;
+}
+header h2 {
+  font-size: 1.3rem;
+}
+header > time {
+  color: #ccc;
+}
+header > span {
+  font-size: 0.8rem;
+}
+
+.blog-post {
+  padding: 2em 0;
+}
+:not(.blog-post) {
+  margin-top: 1em;
+}
+.blog-post .blog-post__header {
+  padding: 1em 0;
+}
+.blog-post .blog-post__header--colapsed {
+  padding: 0;
+}
+
+article {
+  border: "2px" solid black;
+}
+
+article {
+  min-width: 200.34px;
+}
+
+article {
+  font-family: "Helvetica Neue";
+  background-image: url("/images/background.png");
+}
+
+article {
+  border: 1px solid black;
+  -ms-flex: 1;
+}
+
+body {
+  background-color: #dedede;
+}
+
+article {
+  min-width: 250px;
+  font-family: "Helvetica Neue";
+}

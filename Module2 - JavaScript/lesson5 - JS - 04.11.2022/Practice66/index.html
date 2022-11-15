@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Форма подписки</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>Подпишитесь на рассылку</h1>
+    </nav>
+
+    <main class="container">
+      <form>
+        <label for="email">Введите свой емейл</label>
+        <!-- обычно для емейла указывают type="email", но здесь мы использовали type="text", потому что для type="email" браузер удаляет пробелы автоматом -->
+        <input
+          type="text"
+          placeholder="ivan@gmail.com"
+          id="email"
+          autocomplete="off"
+        />
+      </form>
+
+      <pre id="output"></pre>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

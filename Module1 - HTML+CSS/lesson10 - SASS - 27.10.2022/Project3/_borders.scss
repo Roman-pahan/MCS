@@ -1,0 +1,6 @@
+$color: black !default; //значение по умолчанию
+$width: 1px !default;
+
+@mixin border{
+    border: 1px solid $color;
+}

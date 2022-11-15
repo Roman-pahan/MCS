@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+<script type="module" src="./src/index.js"></script>
+    <nav class="navbar">
+      <h1 class="heading">Ваш возраст через год</h1>
+    </nav>
+
+    <main class="container">
+      <div>
+        <label class="label" for="age">Введите возраст</label>
+        <input
+          type="number"
+          class="input"
+          placeholder="Возраст"
+          id="age"
+          min="0"
+          max="130"
+          autocomplete="off"
+          style="font-size: 2rem; width: 8ch;"
+        />
+      </div>
+
+      <p>В следующем году вам будет <span id="next"></span>.</p>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>

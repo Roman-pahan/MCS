@@ -1,0 +1,11 @@
+@use 'framework';
+// @import 'borders';
+
+body{
+    color: framework.$color;
+}
+
+footer{
+    @include framework.border();
+    @include framework.paddings();
+}
