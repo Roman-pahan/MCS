@@ -48,7 +48,7 @@ export default function Shop() {
     <>
       <AddItem onFormSubmit={handleFormSubmit} onPrNameChange={handleChangePrName} onPrDescChange={handleChangeProductDesc} productName={productName} productDesc={productDesc} attention={attention}/>
 
-      <Title items= {items}/>
+      <Title itemsLength= {items.length}/>
 
       <ItemsList items= {items} onHandleDeleteItem={handleDeleteItem}/>
 
