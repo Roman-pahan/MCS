@@ -1,6 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import { render } from "react-dom";
-import mapboxgl from "mapbox-gl/dist/mapbox-gl.js";
+import mapboxgl from "mapbox-gl";
 import "./styles.css";
 
 function App() {
