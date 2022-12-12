@@ -1,0 +1,1 @@
+.parent{@apply flex flex-wrap justify-center items-center;}.child{@apply border border-stone-800 rounded-md m-10  text-center bg-neutral-500 bg-opacity-30;}.delete{@apply bg-purple-500 bg-opacity-50 px-16 m-5 rounded-xl hover:bg-opacity-80 active:bg-opacity-100;}

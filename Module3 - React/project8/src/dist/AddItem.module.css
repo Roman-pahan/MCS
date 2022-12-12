@@ -1,0 +1,31 @@
+.form {
+  @apply flex justify-center  font-bold  bg-stone-800 p-10;
+}
+
+.addform {
+  @apply border-2 flex justify-center items-center flex-col;
+}
+
+.inner {
+  @apply items-start;
+}
+
+.inputlabel {
+  @apply flex text-gray-200;
+}
+
+.inputbackground {
+  @apply flex italic font-bold;
+}
+
+.footer {
+  @apply flex flex-col items-center  justify-center content-center;
+}
+
+.msgfooter {
+  @apply italic flex font-bold text-purple-300;
+}
+
+.addbutton {
+  @apply bg-neutral-500 p-3  flex border-2 active:bg-neutral-500 active:border-purple-500 hover:border-purple-400 hover:bg-neutral-700  focus:border-white m-3;
+}

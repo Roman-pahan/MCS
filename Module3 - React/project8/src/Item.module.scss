@@ -1,0 +1,12 @@
+.prdesc{
+    @apply mx-10
+}
+
+.amountlocation{
+    @apply flex flex-wrap justify-center items-center 
+}
+
+
+.incdecbutton{
+    @apply w-7 h-7 rounded-full bg-purple-500 bg-opacity-50 hover:bg-opacity-80 active:bg-opacity-100
+}
