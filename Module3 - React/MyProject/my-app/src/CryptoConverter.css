@@ -1,0 +1,23 @@
+.crypto-converter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.select-currency {
+    min-width: 1px; /* Устанавливаем минимальную ширину */
+    width: auto; /* Определяется на основе содержимого */
+}
+
+.label-result {
+    margin-left: 15px;
+}

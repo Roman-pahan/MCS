@@ -1,0 +1,23 @@
+.crypto-row {
+  border-bottom: 1px solid #ccc;
+}
+
+.crypto-row-image {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.crypto-row-data {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.crypto-row.green {
+  background-color: #d7f6d6; /* Зеленый фон для положительных изменений */
+}
+
+.crypto-row.red {
+  background-color: #f6d7d7; /* Красный фон для отрицательных изменений */
+}
