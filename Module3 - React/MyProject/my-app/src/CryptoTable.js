@@ -80,7 +80,7 @@ function CryptoTable() {
           <tbody>
             {cryptoData.map((crypto, index) => (
               index === 8 ? null : (
-                <CryptoRow crypto={crypto}/>
+                <CryptoRow key={index} crypto={crypto}/>
               )
             ))}
           </tbody>

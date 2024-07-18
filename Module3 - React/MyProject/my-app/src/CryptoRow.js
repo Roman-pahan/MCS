@@ -3,7 +3,8 @@ import './CryptoRow.css';
 
 const CryptoRow = ({ crypto }) => {
   const [prevPrice, setPrevPrice] = useState(crypto.RAW.USD.PRICE);
-  const [rowColor, setRowColor] = useState(''); // Изначально нет цвета
+  const [rowColor, setRowColor] = useState(''); // Изначально нет 
+  console.log(prevPrice)
 
   useEffect(() => {
     const currentPrice = crypto.RAW.USD.PRICE;

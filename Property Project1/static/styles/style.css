@@ -1,0 +1,41 @@
+/* *{
+    margin: 0;
+} */
+p{
+    font-size: 24px;
+    background-color:rgb(50, 239, 50);
+    /* margin: 25px;
+    padding: 30px; */
+    /* display: inline; */
+}
+
+/* .conteiner{
+    text-align: center;
+    width: 500px;
+} */
+
+/* .conteiner{
+    display: inline;
+} */
+
+.conteiner{
+    margin: 20px;
+    margin: 50px;
+    display: inline-block;
+    /* height: 200px; */
+    text-align: center;
+    background-color: aquamarine;
+
+}
+
+.outer{
+
+}
+
+.main{
+    text-align: center;
+}
+
+.conteiner > img{
+    width: 250px;
+}
