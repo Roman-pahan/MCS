@@ -5,7 +5,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.deleteBook = exports.addBook = void 0;
+exports.toggleFavorite = exports.deleteBook = exports.addBook = void 0;
 
 var actionTypes = _interopRequireWildcard(require("./actionTypes"));
 
@@ -30,3 +30,12 @@ var deleteBook = function deleteBook(id) {
 };
 
 exports.deleteBook = deleteBook;
+
+var toggleFavorite = function toggleFavorite(id) {
+  return {
+    type: actionTypes.TOGGLE_FAVORITE,
+    payload: id
+  };
+};
+
+exports.toggleFavorite = toggleFavorite;
