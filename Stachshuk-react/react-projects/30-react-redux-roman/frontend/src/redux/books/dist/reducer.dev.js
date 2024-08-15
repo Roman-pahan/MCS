@@ -32,6 +32,11 @@ var booksReducer = function booksReducer() {
     case actionTypes.ADD_BOOK:
       return [].concat(_toConsumableArray(state), [action.payload]);
 
+    case actionTypes.DELETE_BOOK:
+      return state.filter(function (book) {
+        return book.id !== action.payload;
+      });
+
     default:
       return state;
   }

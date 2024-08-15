@@ -5,7 +5,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.addBook = void 0;
+exports.deleteBook = exports.addBook = void 0;
 
 var actionTypes = _interopRequireWildcard(require("./actionTypes"));
 
@@ -21,3 +21,12 @@ var addBook = function addBook(newBook) {
 };
 
 exports.addBook = addBook;
+
+var deleteBook = function deleteBook(id) {
+  return {
+    type: actionTypes.DELETE_BOOK,
+    payload: id
+  };
+};
+
+exports.deleteBook = deleteBook;
