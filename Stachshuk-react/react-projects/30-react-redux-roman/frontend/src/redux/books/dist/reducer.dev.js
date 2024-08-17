@@ -32,7 +32,6 @@ var InitialState = [];
 var booksReducer = function booksReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : InitialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
-  console.log(action.type);
 
   switch (action.type) {
     case actionTypes.ADD_BOOK:
