@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _toolkit = require("@reduxjs/toolkit");
 
-var _reducer = _interopRequireDefault(require("./books/reducer"));
+var _booksSlice = _interopRequireDefault(require("./slices/booksSlice"));
 
 var _filterSlice = _interopRequireDefault(require("./slices/filterSlice"));
 
@@ -15,7 +15,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var store = (0, _toolkit.configureStore)({
   reducer: {
-    books: _reducer["default"],
+    books: _booksSlice["default"],
     filter: _filterSlice["default"]
   }
 });
