@@ -11,28 +11,40 @@ var _toolkit = require("@reduxjs/toolkit");
 
 var _createBookWithID = _interopRequireDefault(require("../../utils/createBookWithID"));
 
+var _errorSlice = require("./errorSlice");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var initialState = [];
-var fetchBook = (0, _toolkit.createAsyncThunk)('books/fetchBook', function _callee() {
+var fetchBook = (0, _toolkit.createAsyncThunk)('books/fetchBook', function _callee(url, thunkAPI) {
   var res;
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          _context.next = 2;
-          return regeneratorRuntime.awrap(_axios["default"].get('http://localhost:4000/random-book'));
+          _context.prev = 0;
+          _context.next = 3;
+          return regeneratorRuntime.awrap(_axios["default"].get(url));
 
-        case 2:
+        case 3:
           res = _context.sent;
           return _context.abrupt("return", res.data);
 
-        case 4:
+        case 7:
+          _context.prev = 7;
+          _context.t0 = _context["catch"](0);
+          thunkAPI.dispatch((0, _errorSlice.setError)(_context.t0.message)); // OPTION 1
+          // return thunkAPI.rejectWithValue(error);
+          // // OPTION 2
+
+          throw _context.t0;
+
+        case 11:
         case "end":
           return _context.stop();
       }
     }
-  });
+  }, null, null, [[0, 7]]);
 });
 exports.fetchBook = fetchBook;
 var booksSlice = (0, _toolkit.createSlice)({
@@ -60,10 +72,9 @@ var booksSlice = (0, _toolkit.createSlice)({
       if (action.payload.title && action.payload.author) {
         state.push((0, _createBookWithID["default"])(action.payload, 'API'));
       }
-    });
-    builder.addCase(fetchBook.rejected, function (state, action) {
-      state.errorMsg = action.error.message;
-    });
+    }); // builder.addCase(fetchBook.rejected, (state, action) => {
+    //   state.errorMsg = action.error.message;
+    // });
   }
 });
 var _booksSlice$actions = booksSlice.actions,
