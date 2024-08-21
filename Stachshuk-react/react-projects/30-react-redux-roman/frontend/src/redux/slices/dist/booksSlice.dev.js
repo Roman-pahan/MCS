@@ -67,15 +67,22 @@ var booksSlice = (0, _toolkit.createSlice)({
       });
     }
   },
+  //OPTION 1
   extraReducers: function extraReducers(builder) {
     builder.addCase(fetchBook.fulfilled, function (state, action) {
       if (action.payload.title && action.payload.author) {
         state.push((0, _createBookWithID["default"])(action.payload, 'API'));
       }
-    }); // builder.addCase(fetchBook.rejected, (state, action) => {
-    //   state.errorMsg = action.error.message;
-    // });
-  }
+    });
+  } //OPTION 2
+  // extraReducers: {
+  //   [fetchBook.fulfilled]: (state, action) => {
+  //     if (action.payload.title && action.payload.author) {
+  //       state.push(createBookWithID(action.payload, 'API'));
+  //     }
+  //   },
+  // },
+
 });
 var _booksSlice$actions = booksSlice.actions,
     addBook = _booksSlice$actions.addBook,

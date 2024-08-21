@@ -39,16 +39,23 @@ const booksSlice = createSlice({
       });
     },
   },
+  //OPTION 1
   extraReducers: (builder) => {
     builder.addCase(fetchBook.fulfilled, (state, action) => {
       if (action.payload.title && action.payload.author) {
         state.push(createBookWithID(action.payload, 'API'));
       }
     });
-    // builder.addCase(fetchBook.rejected, (state, action) => {
-    //   state.errorMsg = action.error.message;
-    // });
   },
+
+  //OPTION 2
+  // extraReducers: {
+  //   [fetchBook.fulfilled]: (state, action) => {
+  //     if (action.payload.title && action.payload.author) {
+  //       state.push(createBookWithID(action.payload, 'API'));
+  //     }
+  //   },
+  // },
 });
 
 export const { addBook, deleteBook, toggleFavorite } = booksSlice.actions;
